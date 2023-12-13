@@ -1,5 +1,7 @@
 <div class="container">
-  @for(product of products;track product){
-  <div>{{ product.name }}</div>
+  @for(post of posts;track post){
+  <a [href]="'product/' + post.id"
+    ><div>{{ post.title }}</div>
+  </a>
   }
 </div>

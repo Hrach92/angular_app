@@ -1,0 +1,10 @@
+<div class="container">
+  <p class="title">{{ post.title }}</p>
+  <button
+    (click)="details = !details"
+    [ngClass]="{ buttonActive: details, buttonInActive: !details }"
+  >
+    {{ details ? "Show Less" : "Show More" }}
+  </button>
+  <p *ngIf="!details">{{ post.body }}</p>
+</div>

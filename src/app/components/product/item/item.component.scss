@@ -1,0 +1,18 @@
+.container {
+    padding: 15px;
+    .title{
+        font-size: 18px;
+        font-weight: 600;
+        color:blue;
+    }
+    .title::first-letter{
+        text-transform: capitalize;
+    }
+    .buttonActive{
+        color:red
+    }
+
+    .buttonInActive{
+        color:green
+    }
+}
